@@ -1,0 +1,346 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="narcuistStore">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="navigationBar" minOccurs="1" maxOccurs="1"/>
+                <xs:element ref="store" minOccurs="1" maxOccurs="1"/>
+                <xs:element ref="rowHeading" minOccurs="1" maxOccurs="1"/>
+                <xs:element ref="row" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="rowHeading" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="row" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="rowHeading" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="row" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="rowHeading" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="row" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="copyrightSection" minOccurs="1" maxOccurs="1"/>
+                <xs:element ref="lastSection" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="navigationBar">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element ref="logo" minOccurs="1" maxOccurs="1" />
+                    <xs:element ref="homePage" minOccurs="1" maxOccurs="1" />
+                    <xs:element ref="merchantsPage" minOccurs="1" maxOccurs="1" />
+                    <xs:element ref="aboutPage" minOccurs="1" maxOccurs="1" />
+                    <xs:element ref="contactPage" minOccurs="1" maxOccurs="1" />
+                    <xs:element ref="image" minOccurs="1" maxOccurs="1" />
+                </xs:sequence>
+            </xs:complexType>
+    </xs:element>
+
+    <xs:element name="logo">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="id" use="required" />
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:attribute name="id" type="xs:string"/>
+
+    <xs:element name="homePage" type="xs:string" />
+    <xs:element name="merchantsPage" type="xs:string" />
+    <xs:element name="aboutPage" type="xs:string" />
+    <xs:element name="contactPage" type="xs:string" />
+    <xs:element name="image">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="id" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="store">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="storeSlogan" minOccurs="1" maxOccurs="1" />
+                <xs:element ref="storeDescription" minOccurs="1" maxOccurs="1"/>
+                <xs:element ref="images" minOccurs="1" maxOccurs="1" />
+                <xs:element ref="infoText" minOccurs="1" maxOccurs="1" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="storeSlogan" type="xs:string"/>
+    <xs:element name="storeDescription" type="xs:string"/>
+    <xs:element name="images">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="image" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="infoText" type="xs:string"/>
+
+    <xs:element name="rowHeading">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="text" minOccurs="1" maxOccurs="1"/>
+                <xs:element ref="arrow" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="row">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="card" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute ref="id" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="card">
+        <xs:complexType>
+            <xs:sequence>
+               <xs:element ref="content" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute ref="id" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="content">
+        <xs:complexType>
+            <xs:sequence>
+               <xs:element ref="animation" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute ref="giftcardid" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:attribute name="giftcardid" type="xs:ID"/>
+
+    <xs:element name="animation">
+        <xs:complexType>
+            <xs:sequence>
+               <xs:element ref="name" minOccurs="1" maxOccurs="1"/>
+               <xs:element ref="manufacturer" minOccurs="1" maxOccurs="1"/>
+               <xs:element ref="discount" minOccurs="1" maxOccurs="1"/>
+               <xs:element ref="value" minOccurs="0" maxOccurs="1"/>
+               <xs:element ref="quantity" minOccurs="0" maxOccurs="1"/>
+               <xs:element ref="validTill" minOccurs="1" maxOccurs="1"/>
+               <xs:element ref="type" minOccurs="0" maxOccurs="1"/>
+               <xs:element ref="region" minOccurs="0" maxOccurs="1"/>
+               <xs:element ref="refundable" minOccurs="0" maxOccurs="1"/>
+               <xs:element ref="status" minOccurs="0" maxOccurs="1"/>
+               <xs:element ref="users" minOccurs="0" maxOccurs="1"/>
+               <xs:element ref="buyButton" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="name" type="xs:string"/>
+    <xs:element name="manufacturer" type="xs:string"/>
+    <xs:element name="discount" type="xs:string"/>
+    <xs:element name="value">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="currency"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:attribute name="currency">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Dollar" />
+                <xs:enumeration value="IRs" />
+                <xs:enumeration value="NRs" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <xs:element name="quantity">
+        <xs:simpleType>
+            <xs:restriction base="xs:positiveInteger">
+                <xs:maxInclusive value="99"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="validTill">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:date">
+                    <xs:attribute ref="date" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:attribute name="date">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="AD"/>
+                <xs:enumeration value="BS"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <xs:element name="type">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Physical Gift Card"/>
+                <xs:enumeration value="Digital Gift Card"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="region">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="range"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:attribute name="range">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Continent"/>
+                <xs:enumeration value="Country"/>
+                <xs:enumeration value="State"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <xs:element name="refundable" type="xs:NMTOKEN"/>
+
+    <xs:element name="status">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="statusAvailability">
+                    <xs:attribute ref="availability"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="availability" type="xs:boolean" />
+
+    <xs:simpleType name="statusAvailability">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Yes" />
+            <xs:enumeration value="No" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="users">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="li" minOccurs="0" maxOccurs="4"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="buyButton" type="xs:string"/>
+
+    <xs:element name="text" type="xs:string"/>
+    <xs:element name="arrow">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="showMore" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="showMore" type="xs:string"/>
+
+    <xs:element name="copyrightSection">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="logo" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="copyright" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="copyright" type="xs:string"/>
+
+    <xs:element name="lastSection">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="storeSection" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="menuSection" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="footerImage" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="storeSection">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="footerHeading" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="address" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="contacts" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="email" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="footerHeading" type="xs:string"/>
+
+    <xs:element name="address">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="location" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="location" type="xs:string" />
+
+    <xs:element name="contacts">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="contactNumber" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="contactNumber">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="li" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute ref="type"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:attribute name="type">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Mobile" />
+                <xs:enumeration value="Landline" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <xs:element name="li" type="xs:string"/>
+
+    <xs:element name="email">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="url" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="url" type="xs:string"/>
+
+    <xs:element name="menuSection">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="firstRow" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="secondRow" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="thirdRow" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="fourthRow" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="firstRow" type="xs:string"/>
+    <xs:element name="secondRow" type="xs:string"/>
+    <xs:element name="thirdRow" type="xs:string"/>
+    <xs:element name="fourthRow" type="xs:string"/>
+
+    <xs:element name="footerImage">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="footerImageText" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="image" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="footerImageText" type="xs:string"/>
+
+</xs:schema>

@@ -1,0 +1,668 @@
+navigationBar {
+    display: flex;
+    background-color: white;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 500px;
+    align-items: center;
+    color: black;
+    position: fixed;
+    z-index: 1;
+    -moz-box-shadow: 10px 10px 16px #464646aa;
+    -webkit-box-shadow: 10px 10px 16px #464646aa;
+    box-shadow: 10px 10px 16px #464646aa;
+}
+
+#storeLogo{
+    background-image: url(./images/storeLogo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 50px;
+    width: 200px;
+    height: 100px;
+}
+
+homePage{
+    margin-left: 300px;
+}
+
+homePage:hover{
+    text-decoration: underline;
+}
+
+merchantsPage{
+    padding: 20px;
+}
+
+merchantsPage:hover{
+    text-decoration: underline;
+}
+
+aboutPage {
+    padding: 5px;
+}
+
+aboutPage:hover{
+    text-decoration: underline;
+}
+
+contactPage {
+    padding: 20px;
+}
+
+contactPage:hover{
+    text-decoration: underline;
+}
+
+#searchBar{
+    display: flex;
+    background-image: url("./images/searchBarImage.png");
+    background-repeat: no-repeat;
+    background-size: 420px;
+    width: 350px;
+    height: 80px;
+    margin-left: 100px;
+    margin-top: 25px;
+    background-size: 100%;
+}
+
+store {
+    display: flex;
+    background-image: url("./images/newStoreGif.webp");
+    background-size: 100% 100%;
+    color: black;
+    flex-wrap: wrap;
+
+}
+
+storeSlogan {
+    display: flex;
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    margin-left: 260px;
+    margin-top:130px;
+}
+
+storeDescription {
+    display: flex;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top:20px;
+    margin-left: 28%;
+}
+
+images{
+    display: flex;
+    height: 25vh;
+    width: 100%;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+#firstPageXboxImage{
+    display: flex;
+    background-image: url("./images/firstPage_xboxImage.webp");
+    background-repeat: no-repeat;
+    background-size: 280px;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    margin-left:100px;
+}
+
+#firstPagePhysicalCardImage{
+    display: flex;
+    background-image: url("./images/firstPage_physicalImage.png");
+    background-repeat: no-repeat;
+    background-size: 230px;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+#firstPagePlaystationImage{
+    display: flex;
+    background-image: url("./images/firstPage_playStationImage.png");
+    background-repeat: no-repeat;
+    background-size: 230px;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+#firstPageVisaImage{
+    display: flex;
+    background-image: url("./images/firstPage_visaImage.png");
+    background-repeat: no-repeat;
+    background-size: 230px;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+infoText {
+    display: flex;
+    width: 300px;
+    font-size: 22px;
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 580px;
+    height: 40px;
+    background-color: white;
+    border: 8px solid rgb(179, 58, 179);
+    border-radius: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+infoText:hover{
+    background-color: rgb(179, 58, 179);
+    color: white;
+}
+
+showLessButton{
+    display: flex;
+    margin-top: 200px;
+    margin-left: 660px;
+}
+
+li {
+    display: list-item;
+    list-style-type: square;
+    margin-left: 60px;
+}
+
+copyrightSection {
+    display: flex;
+    height: 10vh;
+    background-color: rgb(241, 241, 241);
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+#appStoreLogo {
+    background-image: url("./images/appStoreLogo.png");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 10px;
+}
+
+#googlePlayLogo {
+    background-image: url("./images/googlePlayLogo.png");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+copyright{
+    margin-left: 450px;
+}
+
+lastSection {
+    display: flex;
+    height: 60vh;
+    color: white;
+    background-color: rgb(40, 49, 76);
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    font-size: 20px;
+}
+
+storeSection{
+    width: 400px;
+    height: 200px;
+    margin-right: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+menuSection{
+    width: 300px;
+    height: 200px;
+    font-size: 25px;
+    margin-right: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+footerImage{
+    width: 300px;
+    height: 200px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footerImageText{
+    font-size: 25px;
+    margin-right: 150px;
+}
+
+#facebookImage{
+    display: flex;
+    background-image: url("./images/facebookImage.png");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#instaImage{
+    display: flex;
+    background-image: url("./images/instaImage.png");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#linkedinImage{
+    display: flex;
+    background-image: url("./images/linkedinImage.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#twitterImage{
+    display: flex;
+    background-image: url("./images/twitterImagte.png");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+footerHeading{
+    display: flex;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+}
+
+address{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+location {
+    display: flex;
+    font-size: 18px;
+}
+
+contacts {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+contactNumber{
+    display: flex;
+    font-size: 18px;
+}
+
+email{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+url {
+    display: flex;
+    font-size: 18px;
+}
+
+firstRow{
+    display: flex;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+firstRow:hover{
+    text-decoration: underline;
+}
+
+secondRow{
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+secondRow:hover{
+    text-decoration: underline;
+}
+
+thirdRow{
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+thirdRow:hover{
+    text-decoration: underline;
+}
+
+fourthRow{
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+fourthRow:hover{
+    text-decoration: underline;
+}
+
+row {
+    display: flex;
+    height: 50vh;
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+rowHeading{
+    display: flex;
+    background-color: #BEAEE2;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    font-size: 36px;
+    padding: 20px;
+    padding-left: 90px;
+}
+
+arrow{
+    display: flex;
+    margin-left: 20px;
+    font-size: 25px;
+    color: 	black;
+    text-align: center;
+    margin-top: 8px;
+}
+
+showMore {
+    opacity: 0;
+}
+
+arrow:hover showMore{
+    opacity: 1;
+    transition: 0.8s;
+    border-bottom: 1px solid black;
+}
+
+
+card {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid rgb(112, 106, 99);
+    -moz-box-shadow: 10px 10px 16px #2e2e2e;
+    -webkit-box-shadow: 10px 10px 16px #2e2e2e;
+    box-shadow: 10px 10px 16px #2e2e2e;
+}
+
+content{
+    opacity: 0;
+    transition: 1.3s;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+    width: 280px;
+    height: 160px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+animation{
+    display: flex;
+    border: solid black;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.642);
+    margin: 0px;
+    flex-direction: column;
+    padding: 10px;
+    color: rgb(255,215,0);
+}
+
+card:hover content{
+    color:rgb(84, 56, 111);
+    opacity: 1;
+    background-color: rgba(241, 241, 241, 0.621);
+    border: solid black;
+    box-shadow: 0 0 0 200px rgba(42, 41, 41, 0.598) inset;
+}
+
+content::-webkit-scrollbar{
+    display: none;
+}
+
+#giftCard_1{
+    background-image: url("./images/ebayGiftCard.png");
+    background-size: 100% 100%;
+}
+
+#giftCard_2{
+    background-image: url("./images/robloxGiftCard.png");
+    background-size: 100% 100%;
+}
+
+#giftCard_3{
+    background-image: url("./images/wayfairGiftCard.png");
+    background-size: 100% 100%;
+}
+
+#giftCard_4{
+    background-image: url("./images/happyBirthdayGiftCard.jpg");
+    background-size: 100% 100%;
+}
+
+#giftCard_5{
+    background-image: url("./images/visaGiftCard.webp");
+    background-size: 100% 100%;
+}
+
+#giftCard_6{
+    background-image: url("./images/amazonGiftCard.jpg");
+    background-size: 100% 100%;
+}
+
+#giftCard_7{
+    background-image: url("./images/nordstromGiftCard.jpg");
+    background-size: 100% 100%;
+}
+
+#giftCard_8{
+    background-image: url("./images/walmartGiftCard.jpg");
+    background-size: 100% 100%;
+}
+
+#giftCard_9{
+    background-image: url("./images/googlePlayGiftCard.png");
+    background-size: 100% 100%;
+}
+
+#giftCard_10{
+    background-image: url("./images/playStationGiftCard.jpg");
+    background-size: 100% 100%;
+}
+
+#giftCard_11{
+    background-image: url("./images/sephoraGiftCard.jpeg");
+    background-size: 100% 100%;
+}
+
+#giftCard_12{
+    background-image: url("./images/ultaGiftCard.webp");
+    background-size: 100% 100%;
+}
+
+#giftCard_13{
+    background-image: url("./images/lifestyleGIftCard.png");
+    background-size: 100% 100%;
+}
+
+#giftCard_14{
+    background-image: url("./images/adidasGiftCard.png");
+    background-size: 100% 100%;
+}
+
+#giftCard_15{
+    background-image: url("./images/privatecaseGiftCard.jpg");
+    background-size: 100% 100%;
+}
+
+#giftCard_16{
+    background-image: url("./images/dymocksGiftCard.jfif");
+    background-size: 100% 100%;
+}
+
+name {
+    color:rgb(255, 255, 255);
+    display: flex;
+    font-size: 28px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+type {
+    display:flex;
+}
+
+discount{
+    display:flex;
+    font-size: 18px;
+    color: #00FF00;
+    justify-content: center;
+}
+
+manufacturer {
+    display: flex;
+    color:rgb(255,215,0);
+    justify-content: right;
+    font-size: 14px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+quantity {
+    display: flex;
+}
+
+validTill{
+    display: flex;
+}
+
+
+users{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+refundable{
+    color:#00FF00;
+}
+
+buyButton {
+    display:flex;
+    border: solid;
+    background-color: black;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 60px;
+    color: #00ffff;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+buyButton:hover{
+    transition: 1s;
+    margin-top: 190px;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-left: 0px;
+}
+
+
+value::before{
+    content: 'Price :';
+}
+
+quantity::before{
+    content: 'Available Cards :'
+}
+
+type::before{
+    content: 'Type :'
+}
+
+status::before{
+    content: 'Available :'
+}
+
+validTill::before{
+    content:'Valid Till :'
+}
+
+

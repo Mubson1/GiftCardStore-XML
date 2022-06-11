@@ -1,0 +1,459 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/css" href="catalog_20048923.css"?>
+
+
+<narcuistStore xsi:noNamespaceSchemaLocation="./catalog_20048923.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <navigationBar>
+            <logo id="storeLogo"></logo>
+            <homePage>Home</homePage>
+            <merchantsPage>Merchants</merchantsPage>
+            <aboutPage>About</aboutPage>
+            <contactPage>Contact</contactPage>
+            <image id="searchBar"></image>
+    </navigationBar>
+    
+    <store>
+        <storeSlogan>
+            <![CDATA[Send Some Instant Cheer]]>
+        </storeSlogan>
+        <storeDescription>
+            <![CDATA[
+                Celebrate special moments with the ones you love
+            ]]>
+        </storeDescription>
+        <images>
+            <image id="firstPageXboxImage"></image>
+            <image id="firstPagePhysicalCardImage"></image>
+            <image id="firstPagePlaystationImage"></image>
+            <image id="firstPageVisaImage"></image>
+        </images>
+        <infoText>Discover Great Gifts</infoText>    
+    </store>
+    
+    <rowHeading>
+        <text>New Gift Cards</text>
+        <arrow>
+            >
+            <showMore> Show More</showMore>
+        </arrow>
+    </rowHeading>
+    
+    <row id="row1">
+        
+        <card id="giftCard_1">
+            <content giftcardid="GC01">
+                <animation>
+                    <name>Ebay gift card</name>
+                    <manufacturer>- By Ebay</manufacturer>
+                    <discount>35% DISCOUNT</discount>
+                    <value currency="Dollar">$15</value>
+                    <quantity>3</quantity>
+                    <validTill date="AD">2023-01-01</validTill>
+                    <type>Digital Gift Card</type>
+                    <region range="Continent">Region :Asia</region>
+                    <refundable>Refundable</refundable>
+                    <status availability="true">Yes</status>
+                    <users>
+                        Accessable Users:
+                        <li>Card Owner</li>
+                        <li>All visitors</li>
+                    </users>
+                    <buyButton>Purchase</buyButton>
+                </animation>
+            </content>
+        </card>
+    
+        <card id="giftCard_2">
+            <content giftcardid="GC02">
+                <animation>
+                    <name>Roblox gift card</name>
+                    <manufacturer>- By Roblox</manufacturer>
+                    <discount>20% DISCOUNT</discount>
+                    <value currency="Dollar">$30</value>
+                    <quantity>20</quantity>
+                    <validTill date="AD">2025-04-15</validTill>
+                    <type>Digital Gift Card</type>
+                    <region range="Country">Region :USA</region>
+                    <refundable>Refundable</refundable>
+                    <status availability="true">Yes</status>
+                    <users>
+                        Accessable Users:
+                        <li>Card Owner</li>
+                    </users>
+                    <buyButton>Purchase</buyButton>
+                </animation>
+            </content>
+        </card>
+    
+        <card id="giftCard_3">
+            <content giftcardid="GC03">
+                <animation>
+                    <name>Wayfair gift card</name>
+                    <manufacturer>- By CSN stores</manufacturer>
+                    <discount>50% DISCOUNT</discount>
+                    <value currency="NRs">NRs.5000</value>
+                    <validTill date="BS">2080-12-31</validTill>
+                    <region range="Country">Region :Nepal</region>
+                    <refundable>Non-Refundable</refundable>
+                    <status availability="false">No</status>
+                    <users>
+                        Accessable Users:
+                        <li>Registered Users</li>
+                        <li>All visitors</li>
+                    </users>
+                    <buyButton>Purchase</buyButton>
+                </animation>
+            </content>
+        </card>
+
+        <card id="giftCard_4">
+            <content giftcardid="GC04">
+                <animation>
+                    <name>Birthday gift card</name>
+                    <manufacturer>- By Panera</manufacturer>
+                    <discount>75% DISCOUNT</discount>
+                    <value currency="NRs">NRs.2000</value>
+                    <validTill date="AD">2024-11-15</validTill>
+                    <type>Physical Gift Card</type>
+                    <status availability="false">No</status>
+                    <users>
+                        Accessable Users:
+                        <li>Card Owner</li>
+                        <li>Registered Users</li>
+                        <li>All visitors</li>
+                    </users>
+                    <buyButton>Purchase</buyButton>
+                </animation>
+            </content>
+        </card>
+    </row>
+
+    <rowHeading>
+        <text>Popular Gift Cards</text>
+        <arrow>
+            >
+            <showMore> Show More</showMore>
+        </arrow>
+    </rowHeading>
+    
+    <row id="row2">
+        <card id="giftCard_5">
+            <content giftcardid="GC05">
+                <animation>
+                    <name>VISA gift card</name>
+                    <manufacturer>- By Visa</manufacturer>
+                    <discount>80% DISCOUNT</discount>
+                    <value currency="IRs">IRs.1000</value>
+                    <quantity>15</quantity>
+                    <validTill date="AD">2025-12-30</validTill>
+                    <type>Digital Gift Card</type>
+                    <refundable>Refundable</refundable>
+                    <status availability="true">Yes</status>
+                    <users>
+                        Accessable Users:
+                        <li>All visitors</li>
+                    </users>
+                    <buyButton>Purchase</buyButton>
+                </animation>
+            </content>
+        </card>
+    
+        <card id="giftCard_6">
+            <content giftcardid="GC06">
+                <animation>
+                    <name>Amazon gift card</name>
+                    <manufacturer>- By Amazon</manufacturer>
+                    <discount>20% DISCOUNT</discount>
+                    <value currency="NRs">NRs.999</value>
+                    <quantity>3</quantity>
+                    <validTill date="AD">2023-01-01</validTill>
+                    <type>Physical Gift Card</type>
+                    <region range="Country">Region :Nepal</region>
+                    <refundable>Refundable</refundable>
+                    <status availability="false">No</status>
+                    <users>
+                        Accessable Users:
+                        <li>Card Owner</li>
+                        <li>Registered Users</li>
+                        <li>All visitors</li>
+                    </users>
+                    <buyButton>Purchase</buyButton>
+                </animation>
+            </content>
+        </card>
+    
+        <card id="giftCard_7">
+            <content giftcardid="GC07">
+                <animation>
+                    <name>Nordstrom card</name>
+                    <manufacturer>- By Nordstrom</manufacturer>
+                    <discount>20% DISCOUNT</discount>
+                    <value currency="Dollar">$10</value>
+                    <quantity>2</quantity>
+                    <validTill date="AD">2026-12-31</validTill>
+                    <type>Physical Gift Card</type>
+                    <region range="State">Region :Log Angeles</region>
+                    <status availability="true">Yes</status>
+                    <users>
+                        Accessable Users:
+                        <li>Card Owner</li>
+                        <li>Registered Users</li>
+                        <li>All visitors</li>
+                    </users>
+                    <buyButton>Purchase</buyButton>
+                </animation>
+            </content>
+        </card>
+
+        <card id="giftCard_8">
+            <content giftcardid="GC08">
+                <animation>
+                    <name>Walmart gift card</name>
+                    <manufacturer>- By Walmart</manufacturer>
+                    <discount>100% DISCOUNT</discount>
+                    <value currency="NRs">NRs.3500</value>
+                    <validTill date="BS">2078-06-01</validTill>
+                    <type>Digital Gift Card</type>
+                    <region range="State">Region :Bagmati</region>
+                    <refundable>Non-refundable</refundable>
+                    <users>
+                        Accessable Users:
+                        <li>Registered Users</li>
+                        <li>All visitors</li>
+                    </users>
+                    <buyButton>Purchase</buyButton>
+                </animation>
+            </content>
+        </card>
+
+    </row>
+
+    <rowHeading>
+        <text>Digital Gift Cards</text>
+        <arrow>
+            >
+            <showMore> Show More</showMore>
+        </arrow>
+    </rowHeading>
+    
+    <row id="row3">
+        <card id="giftCard_9">
+            <content giftcardid="GC09">
+                <animation>
+                    <name>Google Play card</name>
+                    <manufacturer>- By Google Play</manufacturer>
+                    <discount>25% DISCOUNT</discount>
+                    <value currency="IRs">IRs. 500</value>
+                    <quantity>1</quantity>
+                    <validTill date="AD">2022-07-15</validTill>
+                    <type>Digital Gift Card</type>
+                    <region range="Country">Region :India</region>
+                    <refundable>Non-refundable</refundable>
+                    <status availability="true">Yes</status>
+                    <users>
+                        Accessable Users:
+                        <li>Card Owner</li>
+                    </users>
+                    <buyButton>Purchase</buyButton>
+                </animation>
+            </content>
+        </card>
+    
+        <card id="giftCard_10">
+            <content giftcardid="GC010">
+                <animation>
+                    <name>PlayStation card</name>
+                    <manufacturer>- By PlayStation</manufacturer>
+                    <discount>40% DISCOUNT</discount>
+                    <value currency="Dollar">$70</value>
+                    <quantity>4</quantity>
+                    <validTill date="AD">2024-08-30</validTill>
+                    <type>Digital Gift Card</type>
+                    <status availability="false">No</status>
+                    <users>
+                        Accessable Users:
+                        <li>All visitors</li>
+                    </users>
+                    <buyButton>Purchase</buyButton>
+                </animation>
+            </content>
+        </card>
+
+        <card id="giftCard_11">
+            <content giftcardid="GC011">
+                <animation>
+                    <name>Sephora gift card</name>
+                    <manufacturer>- By LVMH</manufacturer>
+                    <discount>13% DISCOUNT</discount>
+                    <value currency="Dollar">$40 </value>
+                    <quantity>8</quantity>
+                        <validTill date="AD">2030-01-05</validTill>
+                    <type>Digital Gift Card</type>
+                    <status availability="false">No</status>
+                    <users>
+                        Accessable Users:
+                        <li>Card Owner</li>
+                        <li>Registered Users</li>
+                        <li>All visitors</li>
+                    </users>
+                    <buyButton>Purchase</buyButton>
+                </animation>
+            </content>
+        </card>
+
+        <card id="giftCard_12">
+            <content giftcardid="GC012">
+                <animation>
+                    <name>Birthday gift card</name>
+                    <manufacturer>- By Ulta</manufacturer>
+                    <discount>90% DISCOUNT</discount>
+                    <value currency="NRs">NRs. 400</value>
+                    <quantity>3</quantity>
+                    <validTill date="BS">2024-09-25</validTill>
+                    <type>Digital Gift Card</type>
+                    <region range="Country">Region :Global</region>
+                    <status availability="true">Yes</status>
+                    <users>
+                        Accessable Users:
+                        <li>Card Owner</li>
+                        <li>Registered Users</li>
+                    </users>
+                    <buyButton>Purchase</buyButton>
+                </animation>
+            </content>
+        </card>
+    </row>
+
+    <rowHeading>
+        <text>Physcial Gift Cards</text>
+        <arrow>
+            >
+            <showMore> Show More</showMore>
+        </arrow>
+    </rowHeading>
+    
+    <row id="row3">
+        <card id="giftCard_13">
+            <content giftcardid="GC013">
+                <animation>
+                    <name>Lifestyle gift card</name>
+                    <manufacturer>- By Lifestyle</manufacturer>
+                    <discount>60% DISCOUNT</discount>
+                    <quantity>11</quantity>
+                    <validTill date="AD">2024-05-08</validTill>
+                    <type>Physical Gift Card</type>
+                    <region range="Continent">Region :Africa</region>
+                    <refundable>Refundable</refundable>
+                    <status availability="true">Yes</status>
+                    <users>
+                        Accessable Users:
+                        <li>Card Owner</li>
+                    </users>
+                    <buyButton>Purchase</buyButton>
+                </animation>
+            </content>
+        </card>
+    
+        <card id="giftCard_14">
+            <content giftcardid="GC014">
+                <animation>
+                    <name>Adidas gift card</name>
+                    <manufacturer>- By Adidas</manufacturer>
+                    <discount>75% DISCOUNT</discount>
+                    <value currency="IRs">IRs. 750</value>
+                    <validTill date="BS">2081-05-30</validTill>
+                    <type>Physical Gift Card</type>
+                    <region range="Country">Region :India</region>
+                    <refundable>Non-Refundable</refundable>
+                    <status availability="true">Yes</status>
+                    <users>
+                        Accessable Users:
+                        <li>Card Owner</li>
+                        <li>Registered Users</li>
+                        <li>All visitors</li>
+                    </users>
+                    <buyButton>Purchase</buyButton>
+                </animation>
+            </content>
+        </card>
+    
+        <card id="giftCard_15">
+            <content giftcardid="GC015">
+                <animation>
+                    <name>Lahjakoritti card</name>
+                    <manufacturer>- By Private Case</manufacturer>
+                    <discount>30% DISCOUNT</discount>
+                    <validTill date="AD">2028-01-01</validTill>
+                    <type>Physical Gift Card</type>
+                    <region range="Country">Region :Nepal</region>
+                    <status availability="false">No</status>
+                    <users>
+                        Accessable Users:
+                        <li>Registered Users</li>
+                        <li>All visitors</li>
+                    </users>
+                    <buyButton>Purchase</buyButton>
+                </animation>
+            </content>
+        </card>
+
+        <card id="giftCard_16">
+            <content giftcardid="GC016">
+                <animation>
+                    <name>Dymocks gift card</name>
+                    <manufacturer>- By Dymocks</manufacturer>
+                    <discount>60% DISCOUNT</discount>
+                    <validTill date="BS">2085-12-30</validTill>
+                    <type>Physical Gift Card</type>
+                    <users>
+                        Accessable Users:
+                        <li>Card Owner</li>
+                        <li>Registered Users</li>
+                        <li>All visitors</li>
+                    </users>
+                    <buyButton>Purchase</buyButton>
+                </animation>
+            </content>
+        </card>
+
+    </row>
+
+    <copyrightSection>
+        <logo id="appStoreLogo"></logo>Get the IOS App
+        <logo id="googlePlayLogo"></logo>Get the Android App
+        <copyright>&#169;2022 Narcuist, Inc. All Rights Reserved</copyright>
+    </copyrightSection>
+
+    <lastSection>
+        <storeSection>
+            <footerHeading>THE NARCUIST STORE</footerHeading>
+            <address>
+                Address
+                <location>New Baneshwor, Kathmandu</location>
+            </address>
+            <contacts>
+                Phone
+                <contactNumber type="Mobile"><li>9843956196</li></contactNumber>
+                <contactNumber type="Landline"><li>01-4458954</li></contactNumber>
+            </contacts>
+            <email>
+                Email
+                <url>www.giftcardstore.com</url>
+            </email>
+        </storeSection>
+        <menuSection>
+            Menu
+            <firstRow>New Gift Cards</firstRow>
+            <secondRow>Popular Gift Cards</secondRow>
+            <thirdRow>Digital Gift Cards</thirdRow>
+            <fourthRow>Physical Gift Cards</fourthRow>
+        </menuSection>
+        <footerImage>
+            <footerImageText>Contact Us</footerImageText>
+            <image id="facebookImage" />
+            <image id="instaImage" />
+            <image id="linkedinImage" />
+            <image id="twitterImage" />
+        </footerImage>
+    </lastSection>
+</narcuistStore>
